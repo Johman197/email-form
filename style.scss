@@ -2,7 +2,7 @@
   box-sizing: border-box;
 }
 body {
-  background: url(../background.png);
+  background: url(Background.png);
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -20,7 +20,7 @@ body {
   flex-direction: column;
   min-height: 100%;
   .landing-intro {
-    background-image: url(../pattern.png);
+    background-image: url(Pattern.png);
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
