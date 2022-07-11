@@ -1,0 +1,166 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background: url(/Assets/Background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  font-family: 'Work Sans', sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+.container-view {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  .landing-intro {
+    background-image: url(../Assets/Pattern.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-width: 100%;
+    height: 40%;
+    margin: 0;
+    background-color: #2355f2;
+    color: #fff;
+
+    h3 {
+      font-size: 2rem;
+      font-weight: 900;
+      width: 100%;
+
+      span {
+        display: block;
+      }
+    }
+  }
+
+  .main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 60%;
+    background-color: #fff;
+    .intro-p {
+      font-size: 1rem;
+      margin: 1rem 1rem 0 1rem;
+      color: rgb(117, 117, 117);
+    }
+
+    .subscribe-form {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-content: center;
+      text-align: center;
+      max-width: 30rem;
+      margin: 2rem 1rem 0 1rem;
+
+      div {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        input,
+        .sub-btn {
+          border: none;
+          display: block;
+          border-radius: 0.3rem;
+          font-size: 1.1rem;
+          padding: 0.8rem;
+        }
+
+        input {
+          flex: 2 2;
+          border: 1px solid #cfcfcf;
+          background-color: #f5f7fa;
+        }
+        .sub-btn {
+          flex: 1 1;
+          color: white;
+          background-color: #2355f2;
+          min-width: 8rem;
+          margin-left: 0.5rem;
+        }
+      }
+    }
+
+    ::placeholder {
+      color: #979797;
+    }
+
+    .sub-disclaimer {
+      display: flex;
+      margin: 1rem 0 0 0;
+      flex-basis: 100%;
+      color: #cfcfcf;
+    }
+
+    .testimony {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      margin-top: 1rem;
+
+      .top {
+        display: flex;
+        align-content: center;
+        .profile-photo {
+          max-width: 4.2rem;
+        }
+        .personal-info {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          text-align: left;
+          margin-left: 0.25rem;
+          h4 {
+            margin: 0 0 0.5rem 0;
+          }
+          p {
+            color: rgb(117, 117, 117);
+            margin: 0;
+          }
+        }
+      }
+
+      .testimony-p {
+        flex-basis: 100%;
+        margin: 0 0.5rem 0 0.5rem;
+        color: rgb(117, 117, 117);
+      }
+    }
+  }
+}
+
+///////////////////BREAKPOINTS/////////////////////////
+@media (min-width: 500px) {
+  .container-view {
+    max-width: 500px;
+    margin: 5rem 0 5rem 0;
+
+    .landing-intro {
+      border-radius: 1rem 1rem 0 0;
+    }
+    .main-content {
+      border-radius: 0 0 1rem 1rem;
+      .subscribe-form {
+        .sub-btn {
+          margin-top: inherit;
+          margin-top: 0;
+        }
+      }
+    }
+  }
+}
