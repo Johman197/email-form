@@ -4,7 +4,7 @@
 }
 
 body {
-  background: url(/Assets/Background.png);
+  background: url(background.png);
   background-repeat: no-repeat;
   background-size: cover;
   display: -webkit-box;
@@ -34,7 +34,7 @@ body {
 }
 
 .container-view .landing-intro {
-  background-image: url(../Assets/Pattern.png);
+  background-image: url(pattern.png);
   background-size: cover;
   background-repeat: no-repeat;
   display: -webkit-box;
